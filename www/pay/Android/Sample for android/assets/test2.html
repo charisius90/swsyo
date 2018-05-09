@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script language="Javascript">
+
+function buttonClick(){
+
+    //WEB TO APP
+    //여기서 form value를 어플리케이션으로 전송합니다.
+    //myInterface는 어플리케이션에서 정의한 이름이며 callAndroid함수는 어플리케이션에 정의된 객체의 함수입니다.
+	window.myInterface.callAndroid(document.test_form.testTextBox.value);
+	
+}
+</script>
+</head>
+<body>
+
+여기는 웹페이지입니다.<br>
+아래 TextBox에 입력하고 난뒤 하단의 버튼을 클릭하면 어플리케이션의 함수에 데이터를 전달하도록 할 것입니다.<br>
+<form name="test_form">
+<input type="text" name="testTextBox" value=""><br>
+</form>
+</body>
+</html>

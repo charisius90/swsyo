@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World!</string>
+    <string name="app_name">Sample for android</string>
+<string name="tstbutton">전송</string>
+<string name="app_name2">App for Sample</string>
+</resources>

@@ -1,0 +1,20 @@
+<?
+$title = "말해요";
+include_once('./act/_head.php');
+?>
+<div class="container">
+<div class="content">
+
+	<div style='text-align:center;'>
+	<?php if($is_member) { ?>	
+	<a href="/act/my.php" class="btn btn-primary" role="button">마이 페이지</a> | <a href="/bbs/logout.php" class="btn btn-default" role="button">로그아웃</a> <br><br>
+	<? } else { ?>
+	<a href="/bbs/login.php" class="btn btn-primary" role="button">로그인</a>
+	<? } ?>
+	<p><br>
+	<a href="/act/search.php" class="btn btn-primary" role="button">선생님 찾기</a>	
+	</div>
+
+</div>
+</div>
+<? include_once('./act/_foot.php'); ?>

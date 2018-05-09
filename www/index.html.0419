@@ -1,0 +1,47 @@
+<?
+$title = "말해요";
+include_once('./act/_head.php');
+?>
+<style>
+body {
+background:url("/img/wall.jpg"); 
+background-size:cover;
+background-position:42% 40%;
+/*
+background:url("/img/shutterstock_326237924.jpg"); 
+background-position:50% 60%;
+*/
+}
+.index_btn{position:absolute;bottom:20%;right:0;left:0;z-index:5000;}
+.title_box{padding-top:60px;}
+.title_text{color:white;text-shadow:2px 2px #111111;}
+.feature_text{color:white;}
+</style>
+
+<div class="container">
+<div class="content">
+	
+	<div class="title_box" style='text-align:center;'>	
+		<h1 class="title_text">바른 언어습관, 우리 함께 말해요</h1>	
+	</div>
+	
+	<div class="title_box" style='text-align:center;'>	
+		<h5 class="feature_text">#주변 선생님 검색 후 방문치료</h5>
+		<h5 class="feature_text">#선생님 즉시 매칭 서비스</h5>	
+	</div>
+
+	<div class='index_btn' style='text-align:center;'>
+	<?php if($is_member) { ?>	
+	<a href="/act/my.php" class="btn btn-primary" role="button">마이 페이지</a> | <a href="/bbs/logout.php" class="btn btn-default" role="button">로그아웃</a> <br><br>
+	<? } else { ?>
+	<a href="/act/login.php" class="btn btn-primary" role="button">로그인</a>
+	<? } ?>
+	<p><br>
+	<a href="/act/search.php" class="btn btn-primary" role="button">선생님 찾기</a>	
+	<p><br>
+	<a href="/act/register.php" class="btn btn-default" role="button">선생님 등록</a>	
+	</div>	
+
+</div>
+</div>
+<? include_once('./act/_foot.php'); ?>
