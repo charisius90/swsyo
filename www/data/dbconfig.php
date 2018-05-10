@@ -1,10 +1,10 @@
 <?php
 if (!defined('_GNUBOARD_')) exit;
-define('G5_MYSQL_HOST', 'localhost');
-define('G5_MYSQL_USER', 'ssw1990');
-define('G5_MYSQL_PASSWORD', 'dhrhrkWkd');
-define('G5_MYSQL_DB', 'ssw1990');
-define('G5_MYSQL_SET_MODE', true);
+define('G5_MYSQL_HOST', '중요정보삭제처리');
+define('G5_MYSQL_USER', '중요정보삭제처리');
+define('G5_MYSQL_PASSWORD', '중요정보삭제처리');
+define('G5_MYSQL_DB', '중요정보삭제처리');
+define('G5_MYSQL_SET_MODE', 중요정보삭제처리);
 
 define('G5_TABLE_PREFIX', 'g5_');
 
